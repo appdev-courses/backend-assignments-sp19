@@ -88,6 +88,21 @@ Note that these projects should be completed **individually**. As a result, all 
 *Response:*
 ````javascript
 {
-  "message": "success"
+  "success": true,
 }
+````
+
+#### Get comments for a specific post
+*Request:* `GET /api/post/{id}/comments`
+
+*Response:*
+````javascript
+[
+  {
+    "id": 1,
+    "score": 0,
+    "text": "My First Comment!",
+    "username": "Young",
+  }
+]
 ````
