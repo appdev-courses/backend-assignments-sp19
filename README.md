@@ -81,13 +81,12 @@ sh run.sh # start running the app
 }
 ````
 
-#### Post a comment / Edit a post
+#### Edit a post
 *Request:* `POST /api/post/{id}/`
 
 *Body:* 
 ````javascript
 {
-  "type": "comment", // can be either 'comment' or 'edit'
   "text": <USER INPUT>
 }
 ````
@@ -122,4 +121,21 @@ sh run.sh # start running the app
     "username": "Young",
   }
 ]
+````
+
+#### Post a comment
+*Request:* `POST /api/post/{id}/comment/`
+
+*Body:* 
+````javascript
+{
+  "text": <USER INPUT>
+}
+````
+
+*Response:*
+````javascript
+{
+  "success": true,
+}
 ````
