@@ -29,7 +29,7 @@ sh run.sh # start running the app
 ## Expected Functionality
 
 #### Get all posts
-*Request:* `GET /api/posts`
+*Request:* `GET /api/posts/`
 
 *Response:*
 ````javascript
@@ -50,13 +50,13 @@ sh run.sh # start running the app
 ````
 
 #### Create a post
-*Request:* `POST /api/posts`
+*Request:* `POST /api/posts/`
 
 *Body:* 
 ````javascript
 {
-  "text": "[user input]",
-  "username": "[user input]",
+  "text": <USER INPUT>,
+  "username": <USER INPUT>,
 }
 ````
 
@@ -64,13 +64,13 @@ sh run.sh # start running the app
 ````javascript
 {
   "id": 1,
-  "text": "[the user input for text]",
-  "username": "[the user input for username]",
+  "text": <USER INPUT FOR TEXT>,
+  "username": <USER INPUT FOR USERNAME>,
 }
 ````
 
 #### Get a specific post
-*Request:* `GET /api/post/{id}`
+*Request:* `GET /api/post/{id}/`
 
 *Response:*
 ````javascript
@@ -82,13 +82,13 @@ sh run.sh # start running the app
 ````
 
 #### Post a comment / Edit a post
-*Request:* `POST /api/post/{id}`
+*Request:* `POST /api/post/{id}/`
 
 *Body:* 
 ````javascript
 {
   "type": "comment", // can be either 'comment' or 'edit'
-  "text": "[user input]"
+  "text": <USER INPUT>
 }
 ````
 
@@ -100,7 +100,7 @@ sh run.sh # start running the app
 ````
 
 #### Delete a specific post
-*Request:* `DELETE /api/post/{id}`
+*Request:* `DELETE /api/post/{id}/`
 
 *Response:*
 ````javascript
@@ -110,7 +110,7 @@ sh run.sh # start running the app
 ````
 
 #### Get comments for a specific post
-*Request:* `GET /api/post/{id}/comments`
+*Request:* `GET /api/post/{id}/comments/`
 
 *Response:*
 ````javascript
