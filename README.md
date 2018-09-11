@@ -4,7 +4,6 @@
 
 * [Academic Integrity and Collaboration](#academic-integrity-and-collaboration)
 * [Setup and Running the App](#setup-and-running-the-app)
-* [Expected Functionality](#expected-functionality)
 
 ## Academic Integrity and Collaboration
 
@@ -25,71 +24,6 @@ pip install -r requirements.txt # install the required packages
 source venv/bin/activate # enter the virtual environment
 sh run.sh # start running the app
 ```
-
-## Expected Functionality
-
-#### Get all posts
-*Request:* `GET /api/posts/`
-
-*Response:*
-````javascript
-[
-  {
-    "id": 1,
-    "score": "0",
-    "text": "My First Post!",
-    "username": "Young",
-  },
-  {
-    "id": 2,
-    "score": "0",
-    "text": "My Second Post!",
-    "username": "Young",
-  }
-]
-````
-
-#### Create a post
-*Request:* `POST /api/posts/`
-
-*Body:* 
-````javascript
-{
-  "text": <USER INPUT>,
-  "username": <USER INPUT>,
-}
-````
-
-*Response:*
-````javascript
-{
-  "id": 1,
-  "text": <USER INPUT FOR TEXT>,
-  "username": <USER INPUT FOR USERNAME>,
-}
-````
-
-#### Get a specific post
-*Request:* `GET /api/post/{id}/`
-
-*Response:*
-````javascript
-{
-  "id": [the url arg for id],
-  "text": "Hello World!",
-  "username": "Young",
-}
-````
-
-#### Edit a post
-*Request:* `POST /api/post/{id}/`
-
-*Body:* 
-````javascript
-{
-  "text": <USER INPUT>
-}
-````
 
 *Response:*
 ````javascript
