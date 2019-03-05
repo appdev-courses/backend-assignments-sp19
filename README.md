@@ -14,14 +14,13 @@ Note that these projects should be completed **individually**. As a result, all 
 #### Setup:
 ```sh
 cd src # change directory 
-python3 -m virtualenv venv # create a virtual environment
+python3 -m virtualenv venv # or "virtualenv venv" if that doesn't work
 . venv/bin/activate # enter the virtual environment
 pip3 install -r requirements.txt # install the required packages
 ```
 
 #### Running the App:
 ```sh
-. venv/bin/activate # enter the virtual environment
-sh run.sh # start running the app
+python app.py
 ```
 
